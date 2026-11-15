@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAYU : Digital Archive and Design Technologist Portfolio</title>
+  <meta name="description" content="Arsip portofolio digital Bayu, seorang Design Technologist dan digital archivist berbasis di Jakarta. Menyajikan rekayasa sistem antarmuka, publikasi interaktif, dan standar desain produk digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+  <a href="#main-content" class="skip-link">Lewati ke konten arsip utama</a>
+
+  <!-- Masthead and Registry Header -->
+  <header class="masthead" id="top" role="banner">
+    <div class="container masthead-inner">
+      <div class="registry-stamp">
+        <a href="#top" class="brand-link" aria-label="Arsip Digital Bayu Beranda">
+          <span class="stamp-prefix">ARCHIVE</span>
+          <span class="stamp-name">BAYU</span>
+          <span class="stamp-id">JKT-ID</span>
+        </a>
+      </div>
+
+      <div class="registry-telemetry" aria-label="Informasi Waktu dan Status">
+        <span class="telemetry-item">
+          <span class="telemetry-label">LOKASI</span>
+          <span class="telemetry-value">JAKARTA (WIB / UTC+7)</span>
+        </span>
+        <span class="telemetry-item">
+          <span class="telemetry-label">STATUS</span>
+          <span class="telemetry-value status-available">TERSEDIA UNTUK KOLABORASI</span>
+        </span>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn-theme" aria-label="Beralih ke mode terang">
+          <span class="theme-icon" aria-hidden="true">
+            <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-text" id="theme-status-text">TERANG</span>
+        </button>
+
+        <button type="button" id="menu-toggle" class="btn-menu" aria-expanded="false" aria-controls="primary-nav" aria-label="Buka menu navigasi arsip">
+          <span class="menu-label">INDEX</span>
+          <span class="menu-box" aria-hidden="true">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </span>
+        </button>
+      </div>
+
+      <nav id="primary-nav" class="nav-shelf" aria-label="Navigasi Utama Arsip">
+        <div class="nav-shelf-content">
+          <div class="nav-shelf-header">
+            <span class="shelf-title">REGISTER INDEKS UTAMA</span>
+            <button type="button" id="menu-close" class="btn-close" aria-label="Tutup menu navigasi">TUTUP [ESC]</button>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#prologue" class="nav-item"><span class="nav-num">01</span><span class="nav-label">PROLOG KATALOG</span></a></li>
+            <li><a href="#accession-ledger" class="nav-item"><span class="nav-num">02</span><span class="nav-label">LEMBAR ARSIP KARYA</span></a></li>
+            <li><a href="#systems-architecture" class="nav-item"><span class="nav-num">03</span><span class="nav-label">METODOLOGI DAN SISTEM</span></a></li>
+            <li><a href="#colophon" class="nav-item"><span class="nav-num">04</span><span class="nav-label">KOLOFON SITUS</span></a></li>
+            <li><a href="#dispatch-contact" class="nav-item"><span class="nav-num">05</span><span class="nav-label">INQUIRI DAN KONTAK</span></a></li>
+          </ul>
+          <div class="nav-shelf-meta">
+            <span class="shelf-tag">BERKAS IDENTITAS</span>
+            <p class="shelf-desc">Bayu: Design Technologist dan Pengembang Antarmuka Web. Spesialisasi sistem kode murni, aksesibilitas WCAG, dan tipografi digital.</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Catalog Prologue -->
+    <section id="prologue" class="section-prologue">
+      <div class="container">
+        <div class="prologue-header-bar">
+          <span class="monotext section-key">[INDEX.01 / PROLOGUE]</span>
+          <span class="monotext section-date">EDISI REGISTRASI: 2024.11</span>
+        </div>
+
+        <div class="prologue-grid">
+          <div class="prologue-headline-col">
+            <h1 class="main-title">
+              Design engineer dan digital archivist di Jakarta yang membangun sistem web fungsional, publikasi interaktif, dan arsitektur desain yang tangguh.
+            </h1>
+          </div>
+          <div class="prologue-details-col">
+            <div class="manifesto-card">
+              <span class="card-eyebrow">BIDANG PRAKTIK AKTIF</span>
+              <ul class="focus-list">
+                <li>
+                  <strong>Sistem Antarmuka & Rekayasa Kode:</strong> Menghubungkan riset interaksi dengan arsitektur HTML, CSS modern, dan JavaScript modular tanpa ketergantungan framework berlebih.
+                </li>
+                <li>
+                  <strong>Publikasi Digital & Eksibisi Virtual:</strong> Menyusun katalog web bernilai arsip tinggi dengan standar tipografi editorial dan aksesibilitas penuh.
+                </li>
+                <li>
+                  <strong>Audit Standar Web & Performa:</strong> Optimalisasi tata letak responsif, navigasi papan ketik, serta kepatuhan standar WCAG 2.1 AA.
+                </li>
+              </ul>
+              <div class="prologue-actions">
+                <a href="#accession-ledger" class="btn btn-primary">Buka Lembar Arsip Karya</a>
+                <a href="#dispatch-contact" class="btn btn-secondary">Kirim Catatan Kolaborasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accession Ledger -->
+    <section id="accession-ledger" class="section-ledger">
+      <div class="container">
+        <div class="section-mast">
+          <div class="mast-left">
+            <span class="monotext section-key">[INDEX.02 / ACCESSION LEDGER]</span>
+            <h2 class="section-title">Lembar Arsip Karya Terpilih</h2>
+          </div>
+          <div class="mast-right">
+            <p class="section-description">
+              Daftar proyek digital, eksperimen tipografi, dan dokumentasi sistem yang dikembangkan antara tahun 2021 hingga 2024. Seluruh karya dianalisis berdasarkan kendala teknis dan hasil fungsional nyata.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="ledger-filter-bar" role="toolbar" aria-label="Filter Kategori Arsip">
+          <span class="filter-caption monotext">KLASIFIKASI:</span>
+          <div class="filter-group">
+            <button type="button" class="btn-filter active" data-filter="all" aria-pressed="true">
+              SEMUA AKSESI (6)
+            </button>
+            <button type="button" class="btn-filter" data-filter="software" aria-pressed="false">
+              SISTEM & SOFTWARE (3)
+            </button>
+            <button type="button" class="btn-filter" data-filter="editorial" aria-pressed="false">
+              EDITORIAL & WEB (2)
+            </button>
+            <button type="button" class="btn-filter" data-filter="speculative" aria-pressed="false">
+              ARSIP FISIK & KHUSUS (1)
+            </button>
+          </div>
+        </div>
+
+        <!-- Tabular Index for Desktop and Tablet -->
+        <div class="table-container" tabindex="0" role="region" aria-label="Tabel Katalog Berkas Proyek">
+          <table class="ledger-table">
+            <thead>
+              <tr>
+                <th scope="col" class="th-code">KODE AKSESI</th>
+                <th scope="col" class="th-title">JUDUL ARTIFAK & KLIEN</th>
+                <th scope="col" class="th-cat">KLASIFIKASI</th>
+                <th scope="col" class="th-tech">MATERIAL TEKNIS</th>
+                <th scope="col" class="th-year">TAHUN</th>
+                <th scope="col" class="th-action">RINCIAN</th>
+              </tr>
+            </thead>
+            <tbody id="ledger-body">
+              <!-- Item 01 -->
+              <tr class="ledger-row" data-category="software" data-id="BAY-2024-06">
+                <td class="td-code"><span class="badge-code">BAY-2024-06</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Sistem Desain Aksara Nusantara</span>
+                  <span class="row-client">Inisiatif Mandiri, Riset Tipografi Jakarta</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">SISTEM & SOFTWARE</span></td>
+                <td class="td-tech">Web Components, OpenType Features, CSS Grid</td>
+                <td class="td-year">2024</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-01" aria-expanded="false" aria-controls="drawer-01">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-01" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value active-val">AKTIF / OPEN SOURCE</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Lead Design Technologist & Font Engineer</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Membangun arsitektur penataan huruf aksara daerah (Jawa, Sunda, Bali) pada peramban modern. Menyelesaikan permasalahan penumpukan diakritik kompleks tanpa penurunan performa rendering.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">Dokumentasi Repositori Git (Eksternal)</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">SPESIMEN RENDERING AKSARA</span>
+                          <div class="specimen-body-box">
+                            <p class="specimen-sample">ꦲꦤꦕꦫꦏ ꦢꦠꦱꦮꦭ ꦥꦝꦗꦪꦚ ꦩꦒꦧꦛꦔ</p>
+                            <p class="specimen-caption">Uji ligatur ganda dan rendering sub-pixel peramban WebKit dan Chromium.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Item 02 -->
+              <tr class="ledger-row" data-category="editorial" data-id="BAY-2024-05">
+                <td class="td-code"><span class="badge-code">BAY-2024-05</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Arsip Virtual Ruang Seni Rupa</span>
+                  <span class="row-client">Galeri Nasional / Kolektif Kuratorial</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">EDITORIAL & WEB</span></td>
+                <td class="td-tech">HTML5 Semantic, CSS Custom Properties, SVG Sprites</td>
+                <td class="td-year">2024</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-02" aria-expanded="false" aria-controls="drawer-02">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-02" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value">ARSIP DIGITAL TERSIMPAN</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Arsitek Informasi & Web Engineer</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Mendigitalkan 140 katalog pameran seni kontemporer Indonesia menjadi indeks web yang dapat dibaca oleh pembaca layar dan memiliki bobot payload di bawah 250kb per halaman.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="#dispatch-contact" class="link-internal">Minta Akses Salinan Berkas Arsip</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">STRUKTUR INDEKS DOKUMENTER</span>
+                          <div class="specimen-body-box">
+                            <div class="file-manifest">
+                              <span class="manifest-row">ENTRY: 140 DOKUMEN FISIK TERINSPEKSI</span>
+                              <span class="manifest-row">UKURAN RATA-RATA: 184 KB (TANPA FRAMEWORK BERLEBIH)</span>
+                              <span class="manifest-row">KOMPATIBILITAS: WCAG 2.1 TINGKAT AA PENUH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Item 03 -->
+              <tr class="ledger-row" data-category="software" data-id="BAY-2023-04">
+                <td class="td-code"><span class="badge-code">BAY-2023-04</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Ledger Logika Operasional Distribusi</span>
+                  <span class="row-client">Konsultan Logistik Maritim Nusantara</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">SISTEM & SOFTWARE</span></td>
+                <td class="td-tech">Vanilla JavaScript, IndexedDB, CSS Modular</td>
+                <td class="td-year">2023</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-03" aria-expanded="false" aria-controls="drawer-03">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-03" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value active-val">PRODUKSI SISTEM INTERNAL</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Spesialis Desain Antarmuka Fungsional</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Antarmuka web bertingkat tinggi untuk pencatatan manifes muatan kapal kargo di pelabuhan Tanjung Priok. Beroperasi penuh secara luring (offline-first) dengan sinkronisasi otomatis saat jaringan tersedia.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="#systems-architecture" class="link-internal">Tinjau Standar Kinerja Sistem</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">VERIFIKASI LOGIKA OFFLINE-FIRST</span>
+                          <div class="specimen-body-box">
+                            <div class="file-manifest">
+                              <span class="manifest-row">KONSISTENSI DATA: ZERO DATA COLLISION VIA INDEXEDDB</span>
+                              <span class="manifest-row">WAKTU MUAT AWAL: 0.38 DETIK PADA JARINGAN 3G</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Item 04 -->
+              <tr class="ledger-row" data-category="editorial" data-id="BAY-2023-03">
+                <td class="td-code"><span class="badge-code">BAY-2023-03</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Monograf Arsitektur Tropis Modern</span>
+                  <span class="row-client">Penerbitan Buku & Studio Arsitektur Jakarta</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">EDITORIAL & WEB</span></td>
+                <td class="td-tech">Fluid Responsive Layout, SVG Vector Drawings</td>
+                <td class="td-year">2023</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-04" aria-expanded="false" aria-controls="drawer-04">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-04" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value">EDISI DIGITAL TERBIT</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Perancang Publikasi & Tipografer Web</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Publikasi web berdimensi editorial yang mengadaptasi tata letak buku cetak arsitektur ke layar digital. Skala tipografi responsif dinamis menggunakan fungsi matematis CSS clamp.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="#dispatch-contact" class="link-internal">Hubungi Untuk Tinjauan Studi Kasus</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">PARAMETER TATA LETAK EDITORIAL</span>
+                          <div class="specimen-body-box">
+                            <p class="specimen-caption">Penggunaan skala modular proporsional 1:1.414 (proporsi ISO perak) pada perataan kisi multi-kolom.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Item 05 -->
+              <tr class="ledger-row" data-category="software" data-id="BAY-2022-02">
+                <td class="td-code"><span class="badge-code">BAY-2022-02</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Generator Token Desain Kroma</span>
+                  <span class="row-client">Inisiatif Terbuka Alat Pengembangan</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">SISTEM & SOFTWARE</span></td>
+                <td class="td-tech">JavaScript ESModules, OKLCH Color Model, CLI Tooling</td>
+                <td class="td-year">2022</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-05" aria-expanded="false" aria-controls="drawer-05">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-05" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value active-val">AKTIF / NPM REPO</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Software Developer & Color Scientist</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Perangkat kalkulasi palet warna berbasis model perseptual OKLCH. Menghasilkan kontras rasio matematis yang menjamin pemenuhan standar WCAG AAA secara otomatis pada token CSS.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-external">Periksa Sumber Kode (GitHub)</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">MODEL PERSEPTUAL OKLCH</span>
+                          <div class="specimen-body-box">
+                            <div class="color-audit-bars" aria-hidden="true">
+                              <span class="c-bar bar-1"></span>
+                              <span class="c-bar bar-2"></span>
+                              <span class="c-bar bar-3"></span>
+                              <span class="c-bar bar-4"></span>
+                            </div>
+                            <p class="specimen-caption">Kalkulasi luminansi seragam tanpa perubahan hue pada gradasi gelap-ke-terang.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Item 06 -->
+              <tr class="ledger-row" data-category="speculative" data-id="BAY-2021-01">
+                <td class="td-code"><span class="badge-code">BAY-2021-01</span></td>
+                <td class="td-title">
+                  <span class="row-project-name">Arsip Efemera Tipografi Jalanan</span>
+                  <span class="row-client">Proyek Dokumentasi Lapangan, Jakarta Pusat</span>
+                </td>
+                <td class="td-cat"><span class="pill-category">ARSIP FISIK & KHUSUS</span></td>
+                <td class="td-tech">Fotografi Lapangan, SVG Vectorizing, Static Site Generator</td>
+                <td class="td-year">2021</td>
+                <td class="td-action">
+                  <button type="button" class="btn-inspect" data-target="drawer-06" aria-expanded="false" aria-controls="drawer-06">
+                    PERIKSA <span class="inspect-icon" aria-hidden="true">+</span>
+                  </button>
+                </td>
+              </tr>
+              <tr id="drawer-06" class="drawer-row" hidden>
+                <td colspan="6" class="drawer-cell">
+                  <div class="drawer-content">
+                    <div class="dossier-grid">
+                      <div class="dossier-meta">
+                        <span class="meta-label">STATUS OPERASIONAL:</span>
+                        <span class="meta-value">ARSIP DIGITAL SELESAI</span>
+                        <span class="meta-label">PERAN:</span>
+                        <span class="meta-value">Peneliti Visual & Kurator Digital</span>
+                        <span class="meta-label">PENDEKATAN:</span>
+                        <p class="meta-desc">
+                          Pencatatan lebih dari 200 plang toko tangan (hand-lettering) di area Senen dan Pasar Baru Jakarta yang terancam hilang akibat renovasi urban. Ditata dalam struktur arsip berbasis metadata geolokasi.
+                        </p>
+                        <div class="dossier-links">
+                          <a href="#colophon" class="link-internal">Baca Metodologi Dokumentasi</a>
+                        </div>
+                      </div>
+                      <div class="dossier-preview">
+                        <div class="specimen-card">
+                          <span class="specimen-header">METADATA KOLEKSI FISIK</span>
+                          <div class="specimen-body-box">
+                            <div class="file-manifest">
+                              <span class="manifest-row">TOTAL DOKUMENTASI: 216 OBJEK TIPOGRAFI JALANAN</span>
+                              <span class="manifest-row">FORMAT VEKTOR: SVG PATH MURNI BERBOBOT RINGAN</span>
+                              <span class="manifest-row">TAHUN SURVEY: 2020 SAMPAI 2021</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Empty State Row (R-27) -->
+              <tr id="ledger-empty-row" class="ledger-empty-row" hidden>
+                <td colspan="6" class="ledger-empty-cell">
+                  <p class="empty-title">Tidak ada berkas pada klasifikasi ini.</p>
+                  <p class="empty-desc">Pilih tombol "SEMUA AKSESI" untuk melihat seluruh katalog proyek.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile Stacked Card View (Synched via CSS and filter state) -->
+        <div class="ledger-mobile-cards" id="ledger-mobile-container" aria-label="Daftar Kartu Arsip Versi Mobile">
+          <article class="mobile-project-card" data-category="software">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2024-06</span>
+              <span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Sistem Desain Aksara Nusantara</h3>
+            <p class="card-client">Inisiatif Mandiri, Riset Tipografi Jakarta</p>
+            <div class="card-tech-stack">
+              <span>Web Components</span>
+              <span>OpenType Features</span>
+              <span>CSS Grid</span>
+            </div>
+            <p class="card-summary">
+              Arsitektur penataan huruf aksara nusantara kompleks dengan penanganan diakritik ganda tanpa degradasi waktu render peramban.
+            </p>
+            <div class="card-footer-action">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Dokumentasi Repositori Git</a>
+            </div>
+          </article>
+
+          <article class="mobile-project-card" data-category="editorial">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2024-05</span>
+              <span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Arsip Virtual Ruang Seni Rupa</h3>
+            <p class="card-client">Galeri Nasional / Kolektif Kuratorial</p>
+            <div class="card-tech-stack">
+              <span>HTML5 Semantic</span>
+              <span>CSS Custom Properties</span>
+              <span>Aksesibilitas</span>
+            </div>
+            <p class="card-summary">
+              Digitalisasi 140 katalog eksibisi seni kontemporer menjadi basis data web berbobot di bawah 250kb per halaman dengan kepatuhan WCAG 2.1 AA.
+            </p>
+            <div class="card-footer-action">
+              <a href="#dispatch-contact" class="btn btn-secondary">Minta Akses Salinan Berkas</a>
+            </div>
+          </article>
+
+          <article class="mobile-project-card" data-category="software">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2023-04</span>
+              <span class="card-year">2023</span>
+            </div>
+            <h3 class="card-title">Ledger Logika Operasional Distribusi</h3>
+            <p class="card-client">Konsultan Logistik Maritim Tanjung Priok</p>
+            <div class="card-tech-stack">
+              <span>Vanilla JavaScript</span>
+              <span>IndexedDB</span>
+              <span>Offline-First</span>
+            </div>
+            <p class="card-summary">
+              Antarmuka pencatatan logistik maritim luring yang tangguh dengan rekonsiliasi data otomatis saat koneksi perkapalan pulih.
+            </p>
+            <div class="card-footer-action">
+              <a href="#systems-architecture" class="btn btn-secondary">Tinjau Standar Kinerja</a>
+            </div>
+          </article>
+
+          <article class="mobile-project-card" data-category="editorial">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2023-03</span>
+              <span class="card-year">2023</span>
+            </div>
+            <h3 class="card-title">Monograf Arsitektur Tropis Modern</h3>
+            <p class="card-client">Penerbitan Buku & Studio Arsitektur Jakarta</p>
+            <div class="card-tech-stack">
+              <span>Fluid Layout</span>
+              <span>Modular Scale</span>
+              <span>SVG Drawings</span>
+            </div>
+            <p class="card-summary">
+              Transposisi pengalaman monograf cetak arsitektur ke kanvas web dinamis menggunakan perhitungan proporsi rasio perak.
+            </p>
+            <div class="card-footer-action">
+              <a href="#dispatch-contact" class="btn btn-secondary">Hubungi Untuk Studi Kasus</a>
+            </div>
+          </article>
+
+          <article class="mobile-project-card" data-category="software">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2022-02</span>
+              <span class="card-year">2022</span>
+            </div>
+            <h3 class="card-title">Generator Token Desain Kroma</h3>
+            <p class="card-client">Inisiatif Terbuka Komputasi Warna</p>
+            <div class="card-tech-stack">
+              <span>ESModules</span>
+              <span>Model OKLCH</span>
+              <span>CLI Tooling</span>
+            </div>
+            <p class="card-summary">
+              Perhitungan kontras warna perseptual matematis otomatis untuk menghasilkan variabel CSS dengan jaminan aksesibilitas tinggi.
+            </p>
+            <div class="card-footer-action">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Sumber Kode GitHub</a>
+            </div>
+          </article>
+
+          <article class="mobile-project-card" data-category="speculative">
+            <div class="card-top-row">
+              <span class="badge-code">BAY-2021-01</span>
+              <span class="card-year">2021</span>
+            </div>
+            <h3 class="card-title">Arsip Efemera Tipografi Jalanan</h3>
+            <p class="card-client">Dokumentasi Lapangan Pasar Baru Jakarta</p>
+            <div class="card-tech-stack">
+              <span>Fotografi Riset</span>
+              <span>SVG Kurasi</span>
+              <span>Metadata Geografis</span>
+            </div>
+            <p class="card-summary">
+              Pencatatan 216 plang toko bersejarah di Senen dan Pasar Baru sebelum pemugaran bangunan, dikompilasi secara terbuka.
+            </p>
+            <div class="card-footer-action">
+              <a href="#colophon" class="btn btn-secondary">Baca Metodologi Lapangan</a>
+            </div>
+          </article>
+
+          <!-- Mobile Empty State (R-27) -->
+          <div id="mobile-empty-state" class="mobile-empty-state" hidden>
+            <p class="empty-title">Tidak ada berkas pada klasifikasi ini.</p>
+            <p class="empty-desc">Pilih tombol "SEMUA AKSESI" untuk melihat seluruh kartu proyek.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems Architecture and Methodologies -->
+    <section id="systems-architecture" class="section-systems">
+      <div class="container">
+        <div class="section-mast">
+          <div class="mast-left">
+            <span class="monotext section-key">[INDEX.03 / SYSTEMS ARCHITECTURE]</span>
+            <h2 class="section-title">Metodologi dan Standar Rekayasa</h2>
+          </div>
+          <div class="mast-right">
+            <p class="section-description">
+              Pendekatan rasional terhadap rekayasa digital: memprioritaskan semantik standar web terbuka di atas ketergantungan perangkat lunak yang berumur pendek.
+            </p>
+          </div>
+        </div>
+
+        <div class="systems-grid">
+          <div class="systems-column">
+            <div class="system-block">
+              <div class="block-header">
+                <span class="block-code">PRINSIP.01</span>
+                <h3 class="block-title">Semantik Standar dan Aksesibilitas Teruji</h3>
+              </div>
+              <p class="block-body">
+                Setiap komponen interaktif dibangun menggunakan elemen bawaan peramban seperti <code>button</code>, <code>a</code>, dan <code>table</code> sebelum menambahkan layer script. Hal ini menjamin navigasi pembaca layar, pengoperasian papan ketik penuh, dan navigasi ramah fokus tanpa peretasan tambahan.
+              </p>
+              <ul class="system-spec-list">
+                <li>Kontras teks terverifikasi WCAG AA (minimal 4.5:1 untuk teks normal).</li>
+                <li>Dukungan navigasi tombol Tab, Enter, dan penutupan laci via Escape.</li>
+                <li>Target sentuh minimal 44x44 piksel pada seluruh layar sentuh mobile.</li>
+              </ul>
+            </div>
+
+            <div class="system-block">
+              <div class="block-header">
+                <span class="block-code">PRINSIP.02</span>
+                <h3 class="block-title">Ketahanan Terhadap Hambatan Jaringan</h3>
+              </div>
+              <p class="block-body">
+                Sistem tidak boleh gagal total ketika jaringan internet pengguna melambat atau terputus. Antarmuka tetap menyajikan konten utama dan hierarki informasi melalui berkas HTML murni yang dapat diproses langsung oleh browser.
+              </p>
+              <ul class="system-spec-list">
+                <li>Beban transfer halaman awal dikontrol secara ketat.</li>
+                <li>Tanpa pustaka font eksternal berbobot megabyte yang menghalangi rendering pertama.</li>
+                <li>Dukungan cache peramban lokal dan pemanfaatan penyimpanan terstruktur.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="systems-column">
+            <div class="spec-sheet">
+              <div class="sheet-title-bar">
+                <span class="monotext">LEMBAR SPESIFIKASI OPERASIONAL</span>
+                <span class="sheet-id">SPEC-2024</span>
+              </div>
+              <div class="sheet-content">
+                <div class="spec-row">
+                  <span class="spec-name">BAHASA UTAMA</span>
+                  <span class="spec-value">HTML5 W3C Valid, CSS3 Level 4, ES2022+</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">STRUKTUR KONTROL</span>
+                  <span class="spec-value">Custom Properties, Subgrid, Container Queries</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">PENGUJIAN KONTRAS</span>
+                  <span class="spec-value">Formula Luminansi Relatif WCAG 2.1</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">KOMPATIBILITAS</span>
+                  <span class="spec-value">Chromium 95+, Safari 15+, Firefox 90+</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">GERAKAN</span>
+                  <span class="spec-value">Menghormati prefers-reduced-motion</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-name">ZERO RUNTIME BLOAT</span>
+                  <span class="spec-value">0 Framework Dependencies</span>
+                </div>
+              </div>
+
+              <div class="spec-notes">
+                <span class="notes-header">CATATAN TEKNOLOGI DESAIN</span>
+                <p>
+                  "Kualitas desain digital tidak diukur dari seberapa banyak efek visual yang ditumpuk, melainkan dari seberapa jernih sistem tersebut menyampaikan data dan seberapa kuat ia bertahan saat diakses di berbagai kondisi perangkat nyata."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colophon and Physical Specimen -->
+    <section id="colophon" class="section-colophon">
+      <div class="container">
+        <div class="section-mast">
+          <div class="mast-left">
+            <span class="monotext section-key">[INDEX.04 / COLOPHON]</span>
+            <h2 class="section-title">Kolofon dan Spesifikasi Situs</h2>
+          </div>
+          <div class="mast-right">
+            <p class="section-description">
+              Transparansi penuh mengenai instrumen, tipografi, dan parameter penyusunan portofolio arsip ini.
+            </p>
+          </div>
+        </div>
+
+        <div class="colophon-grid">
+          <div class="colophon-card">
+            <h3 class="colophon-heading">PILIHAN TIPOGRAFI</h3>
+            <p class="colophon-text">
+              Situs ini dirancang menggunakan <strong>Plus Jakarta Sans</strong> sebagai rupa huruf utama dan <strong>IBM Plex Mono</strong> untuk penandaan metadata arsip serta data tabular teknis. Dipilih atas dasar keterbacaan tinggi dan proporsi geometris modern yang seimbang.
+            </p>
+          </div>
+
+          <div class="colophon-card">
+            <h3 class="colophon-heading">TEORI WARNA ARSIP</h3>
+            <p class="colophon-text">
+              Dua skema warna diskalakan secara manual: <em>Obsidian Dark</em> (tinta arang mendalam) untuk kondisi pencahayaan rendah, dan <em>Archival Linen</em> (kertas arsip hangat) untuk mode terang. Warna aksen Vermilion Stamp dialokasikan secara hemat khusus untuk status fungsional.
+            </p>
+          </div>
+
+          <div class="colophon-card">
+            <h3 class="colophon-heading">INFRASTRUKTUR PENERBITAN</h3>
+            <p class="colophon-text">
+              Diterbitkan secara statis tanpa proses kompilasi sisi server yang rumit. Berkas langsung disajikan melalui jaringan CDN GitHub Pages untuk keandalan maksimal dan efisiensi konsumsi daya komputasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dispatch and Contact -->
+    <section id="dispatch-contact" class="section-dispatch">
+      <div class="container">
+        <div class="dispatch-container">
+          <div class="dispatch-header">
+            <span class="monotext section-key">[INDEX.05 / DISPATCH & INQUIRY]</span>
+            <h2 class="dispatch-title">Inisiasi Kontak dan Korespondensi</h2>
+            <p class="dispatch-subtitle">
+              Terbuka untuk diskusi proyek rekayasa desain, arsitektur sistem antarmuka, lokakarya tipografi, serta konsultasi standar aksesibilitas web.
+            </p>
+          </div>
+
+          <div class="dispatch-grid">
+            <div class="dispatch-channels">
+              <div class="channel-item">
+                <span class="channel-label">KORESPONDENSI LANGSUNG (SUREL)</span>
+                <a href="mailto:bayu@archive.id" class="channel-link">bayu@archive.id</a>
+                <span class="channel-hint">Respon rata-rata dalam 1 hingga 2 hari kerja.</span>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">REPOSITORI KODE (GITHUB)</span>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/bayu-archive</a>
+                <span class="channel-hint">Arsip kode publik, eksperimen web, dan modul desain.</span>
+              </div>
+              <div class="channel-item">
+                <span class="channel-label">JARINGAN PROFESIONAL (LINKEDIN)</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/bayu-designtech</a>
+                <span class="channel-hint">Riwayat karier rekayasa dan kolaborasi industri.</span>
+              </div>
+            </div>
+
+            <!-- Functional Contact Note Form (R-26, R-39) -->
+            <div class="dispatch-form-card">
+              <span class="form-card-title">CATATAN PESAN ARSIP</span>
+              <p class="form-card-desc">Kirimkan ringkasan proyek atau pertanyaan singkat ke buku catatan.</p>
+              
+              <form id="contact-note-form" class="inquiry-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">NAMA LENGKAP ATAU ENTITAS</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Contoh: Rian Anggoro / Studio Merdeka" required autocomplete="name" aria-describedby="name-error" aria-invalid="false">
+                  <span class="input-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">ALAMAT ELEKTRONIK (SUREL)</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="alamat@domain.com" required autocomplete="email" aria-describedby="email-error" aria-invalid="false">
+                  <span class="input-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">INTISARI KEPERLUAN / DESKRIPSI SINGKAT</label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tuliskan gambaran proyek, tenggat waktu, atau materi yang ingin didiskusikan..." required aria-describedby="message-error" aria-invalid="false"></textarea>
+                  <span class="input-error" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                  Kirim Catatan Korespondensi
+                </button>
+              </form>
+
+              <!-- State Messages (R-27) -->
+              <div id="form-feedback" class="form-feedback" hidden aria-live="assertive">
+                <div class="feedback-box">
+                  <span class="feedback-badge" id="feedback-title">CATATAN TERCATAT</span>
+                  <p class="feedback-body" id="feedback-message">Pesan Anda berhasil diverifikasi secara lokal dan simulasi transmisi telah selesai. Untuk pesan mendesak, silakan gunakan surat elektronik langsung.</p>
+                  <button type="button" id="btn-reset-form" class="btn btn-secondary btn-small">Tulis Pesan Baru</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Archival Colophon Footer -->
+  <footer class="archive-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-badge">ARSIP DIGITAL BAYU</span>
+        <span class="footer-copy">Hak Cipta Terpelihara 2021-2024. Dokumen portofolio independen.</span>
+      </div>
+      <div class="footer-center">
+        <span class="monotext footer-hash">SHA256: 8C9A23E4B...JKT</span>
+      </div>
+      <div class="footer-right">
+        <a href="#top" class="footer-top-link">Kembali ke Masthead Teratas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
